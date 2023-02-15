@@ -1,0 +1,89 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    margin-right: 50px;
+  }
+
+  &__title {
+    width: 470px;
+    height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    color: #86878B;
+    width: 470px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+// ===============Tablet--1024px===========
+@media (max-width: 1024px) {
+
+  .social-media {
+    &__info {
+      margin-right: 15px;
+    }
+
+    &__title {
+      width: 402px;
+      height: 45px;
+      font-size: 1.125rem;  /*18px*/
+    }
+
+    &__subtitle {
+      margin-top: 13px;
+      width: 402px;
+      height: 2rem;
+      font-size: 0.875rem;  /*14px*/
+    }
+  }
+}
+
+
+// =================Mobile--320px============
+@media (max-width: 320px) {
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__info {
+      margin-right: 0px;
+      align-items: center;
+    }
+
+    &__title {
+      margin-top: 31px;
+      width: 287px;
+      height: 45px;
+      font-size: 1.125rem;  /*18*/
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__subtitle {
+      margin-top: 13px;
+      width: 271px;
+      height: 48px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+
+
+}

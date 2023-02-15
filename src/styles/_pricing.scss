@@ -1,0 +1,143 @@
+.pricing-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;  /*30px*/
+  margin-top: 3.75rem;  /*60px*/
+}
+
+.pricing-card {
+  width: 370px;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 3.125rem;  /*50px*/
+
+  &__title,
+  &__price,
+  &__option {
+    background-color: #333;
+  }
+
+  &:first-child,
+  &:last-child {
+    margin-top: 20px;
+  }
+
+  &__info {
+    background-color: #fff;
+  }
+
+  &__title,
+  &__price,
+  &__option,
+  &__info {
+    border: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;  /*24px*/
+    height: 60px;
+    color: #fff;
+  }
+
+  &__price {
+    color: #fff;
+    height: 100px;
+    font-weight: 700;
+    font-size: 2.25rem;  /*36px*/
+  }
+
+  &__option {
+    height: 50px;
+    font-weight: 400;
+    font-size: 1.125rem;  /*18px*/
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__info {
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #86878b;
+  }
+}
+
+
+// ===============Tablet--1024px===========
+@media (max-width: 1024px) {
+  .pricing-block {
+    gap: 1.25rem;  /*20px*/
+    margin-top: 1.875rem;  /*30px*/
+  }
+
+  .pricing-card {
+    width: 305px;
+
+    &:first-child,
+    &:last-child {
+      margin-top: 18px;
+    }
+
+    &__title {
+      height: 53px;
+    }
+
+    &__price {
+      height: 89px;
+    }
+
+    &__option {
+      height: 44px;
+    }
+
+    &__info {
+      height: 44px;
+    }
+  }
+}
+
+
+// =================Mobile--320px============
+@media (max-width: 320px) {
+  .pricing-block {
+    gap: 1.6875rem;  /*27px*/
+    margin-top: 1.5rem;  /*24px*/
+  }
+
+  .pricing-card {
+    width: 288px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 1.6875rem;  /*27px*/
+    }
+
+    &:first-child,
+    &:last-child {
+      margin-top: 0px;
+    }
+
+    &__title {
+      font-size: 1.125rem;  /*18px*/
+      height: 47px;
+    }
+
+    &__price {
+      height: 78px;
+      font-size: 1.5rem;  /*24px*/
+    }
+
+    &__option {
+      height: 40px;
+      font-size: 0.875rem;  /*14px*/
+    }
+
+    &__info {
+      height: 40px;
+      font-size: 0.875rem;  /*14px*/
+    }
+  }
+}

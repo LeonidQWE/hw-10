@@ -1,0 +1,131 @@
+$btn-color: #fff;
+$btn-background-color: #ec7979;
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: $btn-color;
+
+  display: inline-flex;
+  align-items: center;
+
+  &_color-none {
+    background-color: transparent;
+  }
+
+  &_color-orange {
+    background-color: $btn-background-color;
+  }
+
+  &_border-yes {
+    border: 1px solid #fff;
+  }
+
+  &_border-no {
+    border: none;
+  }
+
+  &_margin-top-small {
+    margin-top: 1.6875rem;  /*27px*/
+  }
+
+  &_margin-top-big {
+    margin-top: 2.625rem;  /*42px*/
+  }
+
+  &_size-one {
+    padding: 1.25rem 6.0625rem;  /*20px 97px*/
+  }
+
+  &_size-two {
+    padding: 1.25rem 6.0625rem;  /*20px 97px*/
+  }
+
+  &_size-three {
+    padding: 20px 147px;  /**/
+  }
+
+  &_size-four {
+    padding: 20px 147px;
+    margin: 0 380px 50px 380px;
+  }
+
+  &_margin-top-bigest {
+    margin-top: 73px;
+  }
+}
+
+
+// ===============Tablet--1024px===========
+@media (max-width: 1024px) {
+  .button {
+    &_margin-top-small {
+      margin-top: 2.375rem;  /*38px*/
+    }
+
+    &_margin-top-big {
+      margin-top: 1.9375rem;  /*31px*/
+    }
+
+    &_size-one {
+      padding: 1rem 3.375rem;  /*16px 54px*/
+    }
+
+    &_size-two {
+      padding: 1.25rem 4.8125rem;  /*20px 77px*/
+    }
+
+    &_size-three {
+      padding: 20px 121px;
+    }
+
+    &_size-four {
+      padding: 20px 121px;
+      margin: 0 300px 50px 300px;
+    }
+
+    &_margin-top-bigest {
+      margin-top: 32px;
+    }
+  }
+}
+
+
+// =================Mobile--320px============
+@media (max-width: 320px) {
+  .button {
+    &_margin-top-small {
+      margin-top: 1.8125rem;  /*29px*/
+    }
+
+    &_margin-top-big {
+      margin-top: 2.625rem;  /*42px*/
+    }
+
+    &_size-one {
+      padding: 1rem 6.625rem;  /*16px 106px*/
+    }
+
+    &_size-two {
+      padding: 1rem 5.1875rem;  /*16px 83px*/
+    }
+
+    &_size-three {
+    padding: 16px 105px;
+    }
+
+    &_size-four {
+      padding: 16px 90px;
+      margin: 0;
+    }
+
+    &_margin-top-bigest {
+      margin-top: 66px;
+    }
+  }
+
+
+}
+
+
+

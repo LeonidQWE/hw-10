@@ -1,0 +1,29 @@
+.contact-card {
+  display: flex;
+}
+
+.card__information_size_big {
+  width: 570px;
+  margin: 34px 0 0 0;
+}
+
+// ===============Tablet--1024px===========
+@media (max-width: 1024px) {
+  .card__information_size_big {
+    width: 466px;
+    margin: 34px 20px 0 0;
+    }
+}
+
+
+// =================Mobile--320px============
+@media (max-width: 320px) {
+  .contact-card {
+    flex-wrap: wrap;
+    }
+
+  .card__information_size_big {
+    width: 288px;
+    margin: 34px 0 0 0;
+  }
+}

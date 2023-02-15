@@ -1,0 +1,82 @@
+.awesome-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;  /*30px*/
+  margin-top: 4.4375rem;  /*71px*/
+  margin-bottom: 3.625rem;  /*58px*/
+
+  &__col {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;  /*24px*/
+    margin-top: 2.375rem; /*38px*/
+  }
+
+  &__text {
+    width: 370px;
+    margin-top: 2.875rem;  /*46px*/
+    font-weight: 400;
+    font-size: 1.125rem;  /*18px*/
+  }
+}
+
+.awesome-image {
+  width: 170px;
+  height: 170px;
+}
+
+
+// ===============Tablet--1024px===========
+@media (max-width: 1024px) {
+  .awesome-info {
+    gap: 1.25rem;  /*20px*/
+    margin-top: 2rem;  /*32px*/
+    margin-bottom: 4.25rem;  /*68px*/
+
+    &__title {
+      font-size: 1.125rem;  /*18px*/
+      margin-top: 2rem; /*32px*/
+    }
+
+    &__text {
+      width: 300px;
+      margin-top: 1.0625rem;  /*17px*/
+      font-size: 0.875rem;  /*14px*/
+    }
+  }
+
+  .awesome-image {
+    width: 147px;
+    height: 147px;
+  }
+}
+
+
+// =================Mobile--320px============
+@media (max-width: 320px) {
+  .awesome-info {
+    gap: 1.25rem;  /*20px*/
+    margin-top: 3.125rem;  /*50px*/
+    margin-bottom: 3.75rem;  /*60px*/
+
+    &__title {
+      font-size: 1.125rem;  /*18px*/
+      margin-top: 2rem; /*32px*/
+    }
+
+    &__text {
+      width: 288px;
+      margin-top: 2.5625rem;  /*41px*/
+      font-size: 0.875rem;  /*14px*/
+    }
+  }
+
+    .awesome-image {
+      width: 147px;
+      height: 147px;
+    }
+}
